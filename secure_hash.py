@@ -14,7 +14,7 @@ print(python_program)
 original_hash = hashlib.sha256(python_program.encode('utf8'))
 print(f"SHA256: {original_hash.hexdigest()}")
 
-python_program += "print('------------')"
+python_program += "print('code change')"
 print(python_program)
 
 new_hash = hashlib.sha256(python_program.encode('utf8'))
